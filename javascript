@@ -1,13 +1,13 @@
 1 sort
 
 var map = new Map();
-map.set('2-1', "foo");
-map.set('0-1', "bar");
-map.set('3-1', "baz");
+map.set('2-1', "abc");
+map.set('0-1', "sam");
+map.set('3-1', "pqr");
 
-var mapAsc = new Map([...map.entries()].sort());
+var mapDemo = new Map([...map.entries()].sort());
 
-console.log(mapAsc)
+console.log(mapDemo)
 
 2 for
 
@@ -36,8 +36,8 @@ console.log(output);
 
 a = [];
 a[0] = 300;
-a[5] = 500;
+a[1] = 600;
+a[2] = 100;
 a[3] = 200;
-a[4] = 100;
 a.sort( function( a, b ) { return a - b });
-a.forEach( function( value ) { console.log( value ) }); 
+a.forEach( function( val ) { console.log( val ) }); 
